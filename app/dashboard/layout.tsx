@@ -9,7 +9,10 @@ function DashboaedLayout({children}:{children:React.ReactNode}) {
       <AppSidebar/>
     <div className='flex flex-1 flex-col'>
       <AppHeader/>
+      <div className='p-3'>
        {children}
+      </div>
+       
     </div>
     </SidebarProvider>
   )
