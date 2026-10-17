@@ -4,9 +4,11 @@ import { currentUser } from "@clerk/nextjs/server";
 import { eq } from "drizzle-orm";
 import { NextResponse, type NextRequest } from "next/server";
 
+
 export async function POST(req:NextRequest) {
 
     const user=await currentUser()
+    
 
     //if user already exists
 
